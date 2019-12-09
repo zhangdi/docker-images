@@ -8,9 +8,7 @@ ADD . /app
 
 WORKDIR /app
 
-COPY ./pip.conf ~/.pip/
-
-RUN pip install --no-cache-dir scrapydweb
+RUN pip install --no-cache-dir -i https://mirrors.aliyun.com/pypi/simple/ scrapydweb
 
 EXPOSE 5000
 
