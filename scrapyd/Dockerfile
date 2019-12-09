@@ -8,7 +8,7 @@ COPY ./scrapyd.conf /etc/scrapyd/
 
 COPY ./pip.conf ~/.pip/
 
-RUN pip install --no-cache-dir scrapyd
+RUN pip install --no-cache-dir scrapyd requests
 
 EXPOSE 6800
 
