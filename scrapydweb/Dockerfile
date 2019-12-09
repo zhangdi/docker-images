@@ -10,6 +10,9 @@ ADD . /app
 
 WORKDIR /app
 
+#设置时区
+RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
+
 RUN pip install --no-cache-dir -i https://mirrors.aliyun.com/pypi/simple/ scrapydweb
 
 EXPOSE 5000
