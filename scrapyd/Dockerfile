@@ -8,7 +8,7 @@ COPY ./scrapyd.conf /etc/scrapyd/
 
 COPY ./pip.conf ~/.pip/
 
-RUN pip install --no-cache-dir scrapyd requests
+RUN pip install --no-cache-dir -i https://mirrors.aliyun.com/pypi/simple/ scrapyd requests
 
 EXPOSE 6800
 
