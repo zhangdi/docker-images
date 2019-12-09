@@ -46,7 +46,7 @@ PASSWORD = os.getenv('PASSWORD')
 SCRAPYD_SERVERS = [
     os.getenv('SCRAPYD_HOST') + ':' + os.getenv('SCRAPYD_PORT'),
     # 'username:password@localhost:6801#group',
-    ('username', 'password', 'localhost', '6801', 'group'),
+    # ('username', 'password', 'localhost', '6801', 'group'),
 ]
 
 # It's recommended to update the three options below
